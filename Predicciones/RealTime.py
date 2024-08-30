@@ -19,8 +19,7 @@ output = f"{output_path}{video_name}.avi"
 cap = cv2.VideoCapture(0)# Abre la primera cámara conectada !
 height = int( cap.get(cv2.CAP_PROP_FRAME_HEIGHT) ) # -> Obtenemos la altura del video.
 width  = int( cap.get(cv2.CAP_PROP_FRAME_WIDTH) )  # -> Obtenemos la anchura del video.
-#fps    = cap.get(cv2.CAP_PROP_FPS)                 # -> Obtenemos los FPS del video.
-fps = 25 # -> Se fuerzan a 25 fps. Necesidades del sistema.
+fps    = cap.get(cv2.CAP_PROP_FPS)                 # -> Obtenemos los FPS del video.
 
 
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
