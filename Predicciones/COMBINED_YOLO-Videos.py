@@ -26,8 +26,7 @@ def draw_menu(image, width: int, height:int, labels_colours: list):
 object_detection = YOLO('Detection_Hold_Out_FULL.pt')
 image_classif = YOLO('Classification_FULL.pt')
 DO_model_conf = 0.70
-CI_model_conf = (0.15*DO_model_conf) + DO_model_conf
-
+CI_model_conf = 0.80
 data = "C:/Users/photo/Desktop/UMA/TFG/Videos/F (2).mp4"
 output_path = 'C:/Users/photo/Desktop/UMA/TFG/Code/Entrenamiento&Predicciones/COMBINED_YOLO_Videos/'
 name = my.search_name(data)
